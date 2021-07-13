@@ -32,7 +32,6 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    double height = GlobalFunction.getSize(context).height;
     return Scaffold(
       body: Container(
         color: Colors.blue,
