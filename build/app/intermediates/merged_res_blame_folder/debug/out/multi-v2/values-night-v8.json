@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/infinitytech/FlutterProjects/Flutter-Project-Architecture/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/Users/infinitytech/FlutterProjects/MyFlutterProject/Flutter-Project-Architecture-BLoC-Pattern/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/infinitytech/FlutterProjects/Flutter-Project-Architecture/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/infinitytech/FlutterProjects/MyFlutterProject/Flutter-Project-Architecture-BLoC-Pattern/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

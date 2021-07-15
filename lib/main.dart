@@ -1,8 +1,11 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:mvvm_project/global_classes/global_function.dart';
-import 'package:mvvm_project/view/home_screen.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:mvvm_project/home/bloc_pattern/home_bloc.dart';
+import 'package:mvvm_project/home/repository/repository.dart';
+import 'package:mvvm_project/home/view/home_screen.dart';
+import 'package:mvvm_project/home/view/home_screen_bloc.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -11,6 +14,10 @@ void main() {
       primarySwatch: Colors.blue,
     ),
     home: SplashScreen(),
+    // BlocProvider(
+    //   create:(context)=>HomeBLoC(repository: Repository()),
+    //   child: HomeScreenBLoC(),
+    // ),
   ));
 }
 
@@ -25,8 +32,16 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
 
     Timer(Duration(seconds: 2), () {
-      Navigator.of(context)
-          .pushReplacement(MaterialPageRoute(builder: (_) => HomeScreen()));
+
+      Navigator.of(context).pushReplacement(MaterialPageRoute(
+          builder: (_) => BlocProvider(
+                create: (context) => HomeBLoC(repository: Repository()),
+                child: HomeScreenBLoC(),
+              )));
+
+      // Navigator.of(context).pushReplacement(MaterialPageRoute(
+      //     builder: (_) => HomeScreen()));
+
     });
   }
 

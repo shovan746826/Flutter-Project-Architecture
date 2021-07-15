@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Flutter-Project-Architecture.iml" filepath="$PROJECT_DIR$/.idea/Flutter-Project-Architecture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Flutter-Project-Architecture-BLoC-Pattern.iml" filepath="$PROJECT_DIR$/.idea/Flutter-Project-Architecture-BLoC-Pattern.iml" />
     </modules>
   </component>
 </project>
