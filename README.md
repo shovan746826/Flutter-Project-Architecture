@@ -1,4 +1,4 @@
-# mvvm_project
+# Flutter-Project-Architecture-BLoC-Pattern
 
 A new Flutter project.
 
